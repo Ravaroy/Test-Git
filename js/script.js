@@ -1,12 +1,20 @@
-// const answer = +prompt("Вам есть 18?", "18");
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?', '');
 
-// console.log(typeof(answer));
-// console.log(answer + 5);
-// console.log(typeof(answer)); 
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let incr = 10,
-    decr = 10;
-// incr++;
-// decr--;
-console.log(++incr);
-console.log(--decr);
+const a = prompt('Один из просмотренных фильмов?', ''),
+      b = prompt('Как вы оцените этот фильм?', ''),
+      c = prompt('Один из просмотренных фильмов?', ''),
+      d = prompt('Как вы оцените этот фильм?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+
+console.log (personalMovieDB);
